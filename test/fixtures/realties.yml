@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  client: 
+  client_price: 1
+  sale_price: 1
+  constructed_area: 1
+  total_area: 1
+  terrain_width: 1.5
+  terrain_lenght: 1.5
+  dorms_count: 1
+  suites_count: 1
+  bathroom_count: 1
+  floor_number: 1
+  building_name: MyString
+  date_construction: 2012-12-19
+  garage_count: 1
+  description: MyText
+  address: MyString
+  district: 
+  cep: 1
+  adjunt: MyString
+  reference: MyString
+  lat: MyString
+  long: MyString
+  RealtyPurpose: 
+  RealtyType: 
+  web_show_sell_price: false
+  web_show_address: false
+
+two:
+  client: 
+  client_price: 1
+  sale_price: 1
+  constructed_area: 1
+  total_area: 1
+  terrain_width: 1.5
+  terrain_lenght: 1.5
+  dorms_count: 1
+  suites_count: 1
+  bathroom_count: 1
+  floor_number: 1
+  building_name: MyString
+  date_construction: 2012-12-19
+  garage_count: 1
+  description: MyText
+  address: MyString
+  district: 
+  cep: 1
+  adjunt: MyString
+  reference: MyString
+  lat: MyString
+  long: MyString
+  RealtyPurpose: 
+  RealtyType: 
+  web_show_sell_price: false
+  web_show_address: false

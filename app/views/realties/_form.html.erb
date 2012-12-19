@@ -1,0 +1,121 @@
+<%= form_for(@realty) do |f| %>
+  <% if @realty.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@realty.errors.count, "error") %> prohibited this realty from being saved:</h2>
+
+      <ul>
+      <% @realty.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :client %><br />
+    <%= f.text_field :client %>
+  </div>
+  <div class="field">
+    <%= f.label :client_price %><br />
+    <%= f.number_field :client_price %>
+  </div>
+  <div class="field">
+    <%= f.label :sale_price %><br />
+    <%= f.number_field :sale_price %>
+  </div>
+  <div class="field">
+    <%= f.label :constructed_area %><br />
+    <%= f.number_field :constructed_area %>
+  </div>
+  <div class="field">
+    <%= f.label :total_area %><br />
+    <%= f.number_field :total_area %>
+  </div>
+  <div class="field">
+    <%= f.label :terrain_width %><br />
+    <%= f.text_field :terrain_width %>
+  </div>
+  <div class="field">
+    <%= f.label :terrain_lenght %><br />
+    <%= f.text_field :terrain_lenght %>
+  </div>
+  <div class="field">
+    <%= f.label :dorms_count %><br />
+    <%= f.number_field :dorms_count %>
+  </div>
+  <div class="field">
+    <%= f.label :suites_count %><br />
+    <%= f.number_field :suites_count %>
+  </div>
+  <div class="field">
+    <%= f.label :bathroom_count %><br />
+    <%= f.number_field :bathroom_count %>
+  </div>
+  <div class="field">
+    <%= f.label :floor_number %><br />
+    <%= f.number_field :floor_number %>
+  </div>
+  <div class="field">
+    <%= f.label :building_name %><br />
+    <%= f.text_field :building_name %>
+  </div>
+  <div class="field">
+    <%= f.label :date_construction %><br />
+    <%= f.date_select :date_construction %>
+  </div>
+  <div class="field">
+    <%= f.label :garage_count %><br />
+    <%= f.number_field :garage_count %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :district %><br />
+    <%= f.text_field :district %>
+  </div>
+  <div class="field">
+    <%= f.label :cep %><br />
+    <%= f.number_field :cep %>
+  </div>
+  <div class="field">
+    <%= f.label :adjunt %><br />
+    <%= f.text_field :adjunt %>
+  </div>
+  <div class="field">
+    <%= f.label :reference %><br />
+    <%= f.text_field :reference %>
+  </div>
+  <div class="field">
+    <%= f.label :lat %><br />
+    <%= f.text_field :lat %>
+  </div>
+  <div class="field">
+    <%= f.label :long %><br />
+    <%= f.text_field :long %>
+  </div>
+  <div class="field">
+    <%= f.label :RealtyPurpose %><br />
+    <%= f.text_field :RealtyPurpose %>
+  </div>
+  <div class="field">
+    <%= f.label :RealtyType %><br />
+    <%= f.text_field :RealtyType %>
+  </div>
+  <div class="field">
+    <%= f.label :web_show_sell_price %><br />
+    <%= f.check_box :web_show_sell_price %>
+  </div>
+  <div class="field">
+    <%= f.label :web_show_address %><br />
+    <%= f.check_box :web_show_address %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

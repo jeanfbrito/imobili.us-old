@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @realty_purpose.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @realty_purpose.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_realty_purpose_path(@realty_purpose) %> |
+<%= link_to 'Back', realty_purposes_path %>

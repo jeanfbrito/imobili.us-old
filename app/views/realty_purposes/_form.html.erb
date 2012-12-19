@@ -1,0 +1,25 @@
+<%= form_for(@realty_purpose) do |f| %>
+  <% if @realty_purpose.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@realty_purpose.errors.count, "error") %> prohibited this realty_purpose from being saved:</h2>
+
+      <ul>
+      <% @realty_purpose.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

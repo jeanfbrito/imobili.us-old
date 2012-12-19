@@ -1,0 +1,69 @@
+<%= form_for(@client) do |f| %>
+  <% if @client.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</h2>
+
+      <ul>
+      <% @client.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :date_born %><br />
+    <%= f.date_select :date_born %>
+  </div>
+  <div class="field">
+    <%= f.label :cpf %><br />
+    <%= f.number_field :cpf %>
+  </div>
+  <div class="field">
+    <%= f.label :rg %><br />
+    <%= f.number_field :rg %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :district %><br />
+    <%= f.text_field :district %>
+  </div>
+  <div class="field">
+    <%= f.label :cep %><br />
+    <%= f.number_field :cep %>
+  </div>
+  <div class="field">
+    <%= f.label :reference %><br />
+    <%= f.text_field :reference %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_comercial %><br />
+    <%= f.number_field :phone_comercial %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_residential %><br />
+    <%= f.number_field :phone_residential %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_cel %><br />
+    <%= f.number_field :phone_cel %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :owner %><br />
+    <%= f.text_field :owner %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

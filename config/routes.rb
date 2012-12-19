@@ -1,4 +1,18 @@
 ImobiliUs::Application.routes.draw do
+  resources :realties
+
+  resources :realty_purposes
+
+  resources :realty_types
+
+  resources :clients
+
+  resources :districts
+
+  resources :cities
+
+  resources :states
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

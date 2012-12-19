@@ -1,0 +1,73 @@
+<h1>Listing realties</h1>
+
+<table>
+  <tr>
+    <th>Client</th>
+    <th>Client price</th>
+    <th>Sale price</th>
+    <th>Constructed area</th>
+    <th>Total area</th>
+    <th>Terrain width</th>
+    <th>Terrain lenght</th>
+    <th>Dorms count</th>
+    <th>Suites count</th>
+    <th>Bathroom count</th>
+    <th>Floor number</th>
+    <th>Building name</th>
+    <th>Date construction</th>
+    <th>Garage count</th>
+    <th>Description</th>
+    <th>Address</th>
+    <th>District</th>
+    <th>Cep</th>
+    <th>Adjunt</th>
+    <th>Reference</th>
+    <th>Lat</th>
+    <th>Long</th>
+    <th>Realtypurpose</th>
+    <th>Realtytype</th>
+    <th>Web show sell price</th>
+    <th>Web show address</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @realties.each do |realty| %>
+  <tr>
+    <td><%= realty.client %></td>
+    <td><%= realty.client_price %></td>
+    <td><%= realty.sale_price %></td>
+    <td><%= realty.constructed_area %></td>
+    <td><%= realty.total_area %></td>
+    <td><%= realty.terrain_width %></td>
+    <td><%= realty.terrain_lenght %></td>
+    <td><%= realty.dorms_count %></td>
+    <td><%= realty.suites_count %></td>
+    <td><%= realty.bathroom_count %></td>
+    <td><%= realty.floor_number %></td>
+    <td><%= realty.building_name %></td>
+    <td><%= realty.date_construction %></td>
+    <td><%= realty.garage_count %></td>
+    <td><%= realty.description %></td>
+    <td><%= realty.address %></td>
+    <td><%= realty.district %></td>
+    <td><%= realty.cep %></td>
+    <td><%= realty.adjunt %></td>
+    <td><%= realty.reference %></td>
+    <td><%= realty.lat %></td>
+    <td><%= realty.long %></td>
+    <td><%= realty.RealtyPurpose %></td>
+    <td><%= realty.RealtyType %></td>
+    <td><%= realty.web_show_sell_price %></td>
+    <td><%= realty.web_show_address %></td>
+    <td><%= link_to 'Show', realty %></td>
+    <td><%= link_to 'Edit', edit_realty_path(realty) %></td>
+    <td><%= link_to 'Destroy', realty, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Realty', new_realty_path %>
